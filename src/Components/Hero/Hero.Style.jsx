@@ -58,7 +58,7 @@ color: #000;
 font-size: 1.5rem;
 transition: all 0.2s ease-in-out;
 &:hover {
-    background: #facc15;
+    background:#f1c71f ;
     transition: all 0.2s ease-in-out;
 
 }
