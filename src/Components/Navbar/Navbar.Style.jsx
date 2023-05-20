@@ -43,16 +43,20 @@ z-index: 500;
 }
 `
 export const NavBarTopRight = styled.div`
-width: 30%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+width: 60%;
+margin-right: 2rem;
 
 `
 
 export const NavBarTopRighDiv = styled.div`
 display: flex;
-justify-content: flex-end;
+justify-content: center;
 align-items: center;
 @media screen and (max-width : 880px) {
-display    : none;
+display: none;
 }
 `
 export const NavBarTopRighLink = styled(Link)`
@@ -63,14 +67,14 @@ font-size: 1.2rem;
 `
 
 export const NavBarTopRightIcon = styled(FaPizzaSlice)`
-display: none;
+margin-left:1rem; 
 color: #facc15;
 font-size: 2rem;
-margin-right: 5rem;
+
 
 
 @media screen and (max-width:880px) {
-display    : block;
+display : block;
 margin-right: 0rem;
 position: absolute;
 top: 25px;

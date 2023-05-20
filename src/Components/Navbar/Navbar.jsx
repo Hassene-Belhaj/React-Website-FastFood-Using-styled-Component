@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavBarContainer, NavBarLogo, NavBarTopRighDiv, NavBarTopRighLink, NavBarTopRight, NavBarTopRightIcon } from './Navbar.Style'
 
-const Navbar = () => {
+const Navbar = ({HandleToggle}) => {
   return (
     <NavBarContainer>
       <NavBarLogo>
@@ -12,7 +12,7 @@ const Navbar = () => {
                <NavBarTopRighLink>Menu</NavBarTopRighLink>
                <NavBarTopRighLink>About Us</NavBarTopRighLink>
            </NavBarTopRighDiv>
-        <NavBarTopRightIcon></NavBarTopRightIcon>
+        <NavBarTopRightIcon onClick={HandleToggle}></NavBarTopRightIcon>
       </NavBarTopRight>
     </NavBarContainer>
   )
