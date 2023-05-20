@@ -31,11 +31,17 @@ text-align: center;
 export const HeroH1 = styled.h1`
 font-size: 4rem;
 color: #fff;
+padding-right: 10px;
 letter-spacing: 3px;
 @media screen and (max-width:786px){
 font-size  :3rem ;
 }
 `
+export const HeroDecoration = styled.div`
+position: relative;
+`
+
+
 export const HeroP = styled.p`
 font-size: 1.8rem;
 color: #fff;
