@@ -1,6 +1,7 @@
 import React from 'react'
-import { PizzaSectionContainer, PizzaSectionDiv, PizzaSectionDivCard, PizzaSectionImage } from './PizzaSection.Style'
+import { PizzaSectionContainer, PizzaSectionDiv, PizzaSectionDivCard, PizzaSectionH2, PizzaSectionImage, PizzaSectionP } from './PizzaSection.Style'
 import { Data } from './Data'
+import { Button } from '../Hero/Hero.Style'
 
 const PizzaSection = () => {
 
@@ -12,6 +13,9 @@ const PizzaSection = () => {
       return (
          <PizzaSectionDivCard key={index}>
          <PizzaSectionImage src={item.image} />
+         <PizzaSectionH2>{item.title}</PizzaSectionH2>
+         <PizzaSectionP>{item.ingredients}</PizzaSectionP>
+         <Button>Add To Cart</Button>
          </PizzaSectionDivCard>
       )
      })}
