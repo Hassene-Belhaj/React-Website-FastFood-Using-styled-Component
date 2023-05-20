@@ -18,9 +18,9 @@ padding: 3rem 0;
 gap: 2rem;
 
 @media screen and (max-width:808px) {
-    width: 80%;
+    width: 100%;
     display: block;
-    padding-top: 2rem;
+    padding-top: 5rem;
     }
 `
 
@@ -34,14 +34,17 @@ margin-right:auto;
 flex-direction: column;
 align-items: center;
 margin: 0 auto;
-margin-bottom: 8rem;
+margin-bottom: 4rem;
 border-radius: 10px;
-border:1px solid gray;
 transition: all 0.2s ease-in-out;
+
 
 &:hover {
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width : 880px) {
+  width:360px;  
 }
 ` 
 
@@ -49,12 +52,16 @@ export const PizzaSectionImage = styled.img`
 display:flex;
 flex-direction:column;
 width: 400px;
-height: 60%;
+height: 50%;
 object-fit: cover; 
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 opacity: 0.7;
-border-bottom: 5px solid yellow;
+/* border-bottom: 7px solid #facc15;
+border-right: 7px solid #facc15; */
+@media screen and (max-width : 880px) {
+  width:360px;  
+}
 `
 
 export const PizzaSectionH2 = styled.h2`
