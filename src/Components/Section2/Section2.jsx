@@ -7,7 +7,7 @@ const Section2 = () => {
   return (
     <>
     <SectionContainer>
-     <SectionH2>Choose Your Favorite</SectionH2>
+     <SectionH2>Sweet Treats For You</SectionH2>
     <SectionDiv>
       {Data2.map((item,index)=>{
        return (
