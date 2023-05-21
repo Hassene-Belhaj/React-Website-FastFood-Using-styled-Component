@@ -11,7 +11,7 @@ const HandleToggle = () =>setToggle(!toggle)
   return (
     <HeroContainer>
         <Navbar  HandleToggle={HandleToggle} />
-        <SideBar toggle={toggle} HandleToggle={HandleToggle} />
+        <SideBar toggle={toggle? 1 : 0 } HandleToggle={HandleToggle} />
         <HeroCol>
             <HeroDecoration>
                 <HeroH1>Greatest Pizza Ever</HeroH1>

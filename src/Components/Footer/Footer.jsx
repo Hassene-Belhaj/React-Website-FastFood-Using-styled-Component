@@ -12,7 +12,7 @@ const Footer = () => {
         <p>Pizza <span style={{color:"#facc15"}}>di Napoli</span></p>
         </FooterLogo>
       </FooterDivOne>
-      <FooterFlexTwo>" Unico Vero Gusto Italiano ! "</FooterFlexTwo>
+      <FooterFlexTwo>"l'Unico Vero Gusto Italiano ! "</FooterFlexTwo>
       <FooterFlexThree>
           <FooterIcon1 size={25} />
           <FooterIcon2 size={25} />
