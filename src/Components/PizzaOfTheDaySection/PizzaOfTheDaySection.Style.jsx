@@ -15,11 +15,12 @@ color: #fff;
 export const PizzaOfTheDayH2 = styled.h2`
 width: 100%;
 text-align: center;
-padding-top: 6rem;
-font-size:10rem;
+padding-top: 10rem;
+font-size:5rem;
 text-transform: capitalize;
-@media screen and (max-width : 1280px) {
+@media screen and (max-width : 880px) {
 font-size:4rem;    
+letter-spacing :3px ;
 }
 `
 export const PizzaOfTheDayp = styled.p`

@@ -5,7 +5,7 @@ import { Button } from '../Hero/Hero.Style'
 const PizzaOfTheDaySection = () => {
   return (
     <PizzaOfdaySectionContainer>
-    <PizzaOfTheDayH2>pizza of the day
+    <PizzaOfTheDayH2>pizza of  the day
     <PizzaOfTheDayp>truffle alfredo sauce topped with 24 carat gold dust</PizzaOfTheDayp>
     </PizzaOfTheDayH2>
      <PizzaOfTheDayDivBtn>
