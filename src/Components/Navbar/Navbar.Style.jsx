@@ -69,6 +69,14 @@ export const NavBarTopRightIcon = styled(FaPizzaSlice)`
 margin-left:1rem; 
 color: #facc15;
 font-size: 2rem;
+opacity: 0.9;
+cursor: pointer;
+transition: 0.2s ease-in;
+&:hover {
+    opacity: 1;
+    transition: 0.2s ease-out;
+}
+
 
 
 

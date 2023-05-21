@@ -1,14 +1,13 @@
 import React from 'react'
-import { SectionContainer, SectionDiv, SectionDivCard, SectionH2, SectionH3, SectionImage, SectionP, SectionP2 } from './Section1.Style'
+import { SectionContainer, SectionDiv, SectionDivCard, SectionH2, SectionH3, SectionImage, SectionP, SectionP2 } from './DynamicSection.Style'
 import { Button } from '../Hero/Hero.Style'
-import { Data } from './Data'
 
-const Section1 = () => {
+const DynamicSection = ({heading,Data}) => {
 
   return (
    <>
    <SectionContainer>
-    <SectionH2>Choose Your Favorite</SectionH2>
+    <SectionH2>{heading}</SectionH2>
    <SectionDiv>
      {Data.map((item,index)=>{
       return (
@@ -28,4 +27,4 @@ const Section1 = () => {
   )
 }
 
-export default Section1
+export default DynamicSection

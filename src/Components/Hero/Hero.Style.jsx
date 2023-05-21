@@ -56,10 +56,12 @@ margin: 1rem  0;
 border-radius : 8px;
 color: #000;
 font-size: 1.5rem;
+opacity:0.85;
+cursor: pointer;
 transition: all 0.2s ease-in-out;
 &:hover {
-    background:#f1c71f ;
-    transition: all 0.2s ease-in-out;
+    opacity:1;
+
 
 }
 

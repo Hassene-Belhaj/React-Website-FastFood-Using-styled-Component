@@ -31,7 +31,7 @@ export const Data =  [
     },
 ]
 
-export const Data2 =  [
+export const DataTwo =  [
 
     { 
     image: img4,  

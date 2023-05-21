@@ -35,7 +35,7 @@ margin: 1rem 0;
 text-decoration: none;
 transition: all 0.3s ease-in-out;
 margin-bottom: 2rem;
-
+cursor: pointer;
 &:hover {
 text-decoration: underline;
 transition: all 0.3s ease-in-out;
@@ -56,4 +56,6 @@ position: absolute;
 right: 15px;
 top: 15px;
 z-index: 600;
+cursor: pointer;
+
 `
