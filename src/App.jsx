@@ -1,9 +1,12 @@
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
 import { GlobalStyle } from './Components/Navbar/Navbar.Style'
 import Hero from './Components/Hero/Hero'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import PizzaSection from './Components/PizzaSection/PizzaSection'
+import Section1 from './Components/Section1/Section1'
+import Section2 from './Components/Section2/Section2'
+import { Data } from './Components/Section1/Data'
+
+
 
 const App = () => {
   return (
@@ -11,7 +14,8 @@ const App = () => {
     <Router>
     <GlobalStyle/>
     <Hero />
-    <PizzaSection />
+    <Section1 />
+    <Section2 />
     </Router>
   )
 }

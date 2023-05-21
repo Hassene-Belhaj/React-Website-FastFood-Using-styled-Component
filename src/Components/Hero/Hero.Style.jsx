@@ -29,7 +29,7 @@ text-align: center;
 `
 
 export const HeroH1 = styled.h1`
-font-size: 4rem;
+font-size: 5rem;
 color: #fff;
 padding-right: 10px;
 letter-spacing: 3px;

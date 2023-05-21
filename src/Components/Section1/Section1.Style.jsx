@@ -1,13 +1,13 @@
 import { styled } from 'styled-components'
 
 
-export const PizzaSectionContainer = styled.div`
+export const SectionContainer = styled.div`
 width: 100%;
 height: 100%;
 background: #000;
 `
 
-export const PizzaSectionDiv = styled.div`
+export const SectionDiv = styled.div`
 width: 80%;
 height: 100%;
 display: flex;
@@ -24,7 +24,7 @@ gap: 2rem;
     }
 `
 
-export const PizzaSectionDivCard = styled.div`
+export const SectionDivCard = styled.div`
 background: #000;
 width: 400px;
 height: 700px;
@@ -48,24 +48,26 @@ transition: all 0.2s ease-in-out;
 }
 ` 
 
-export const PizzaSectionImage = styled.img`
+export const SectionImage = styled.img`
 display:flex;
 flex-direction:column;
 width: 400px;
 height: 50%;
 object-fit: cover; 
-/* border-top-left-radius: 10px;
-border-top-right-radius: 10px; */
-opacity: 0.7;
-border-right: 4px solid #fcd34d ;
-border-bottom: 4px solid #fcd34d;
+border-top-left-radius: 60px;
+opacity: 0.8;
+/* border-right: 4px solid #fcd34d ;
+border-bottom: 4px solid #fcd34d; */
 padding: 10px 10px;
+box-shadow: 10px 10px #fcd34d;
+
 @media screen and (max-width : 880px) {
   width:360px;  
+
 }
 `
 
-export const PizzaSectionH2 = styled.h2`
+export const SectionH2 = styled.h2`
 text-align: center;
 font-size: 3rem;
 color: #fff;
@@ -75,7 +77,7 @@ letter-spacing: 3px;
 `
 
 
-export const PizzaSectionH3 = styled.h3`
+export const SectionH3 = styled.h3`
 text-align: center;
 font-size: 2rem;
 color: #fff;
@@ -83,14 +85,14 @@ padding: 1rem 0;
 letter-spacing: 1px;
 `
 
-export const PizzaSectionP = styled.p`
+export const SectionP = styled.p`
 text-align: center;
 font-size: 1.1rem;
 color: #fff;
 padding: 1rem 0;
 letter-spacing: 1px;
 `
-export const PizzaSectionP2 = styled.p`
+export const SectionP2 = styled.p`
 text-align: center;
 font-size: 1.6rem;
 color: #fff;
