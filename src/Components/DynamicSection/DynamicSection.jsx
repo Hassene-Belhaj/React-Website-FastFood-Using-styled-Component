@@ -17,12 +17,12 @@ const DynamicSection = ({heading,Data}) => {
  const animation = useAnimation()
 
 
- useEffect(()=>{
+useEffect(()=>{
 if(inView) {
   animation.start({
     opacity :  0.9,
     transition : {
-      delay : 0.2 ,
+      delay : 0.35 ,
       duration : 1.5 ,
     }
   })
