@@ -19,45 +19,28 @@ const DynamicSection = ({heading,Data}) => {
 
 useEffect(()=>{
 if(inView) {
-  animation.start({
-    opacity :  0.9,
-    transition : {
-      delay : 0.35 ,
-      duration : 1.5 ,
-    }
-  })
+  animation.start('visible')
   
 } else {
-  animation.start({
-    opacity : 0.3 ,
-  })
+  animation.start('hidden')
 }
 
  },[inView])
 
 
 
-  const VariantItem = {
-    hidden : {
-        // x : "-100vw"
-        opacity : 0.1 ,
-    },
-    visible :{
-        // x: 0 ,
-        transition : {
-            duration :  5} ,
-        opacity : 1 ,
-    }
-}
-
   return (
    <>
    <SectionContainer ref={ref}>
     <motion.div 
-    initial="hidden"
-    // animate="visible"
-    // variants={VariantItem}
-    animate ={animation}
+      variants={{
+        hidden : {opacity : 0.5 , y : 100} ,
+        visible : {opacity : 1 , y : 0}
+      }}
+      animate={animation}
+      transition={{
+        duration : 1 
+      }}
     > 
 
     <SectionH2>{heading}</SectionH2>

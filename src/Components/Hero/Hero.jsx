@@ -3,7 +3,7 @@ import { Button, HeroCol, HeroContainer, HeroDecoration, HeroH1, HeroP,  } from 
 import Navbar from '../Navbar/Navbar'
 import SideBar from '../SideBar/SideBar'
 import { useState } from 'react'
-import { invariant, motion ,useAnimation} from 'framer-motion'
+import { motion ,useAnimation} from 'framer-motion'
 import { useInView} from 'react-intersection-observer'
 
 
@@ -14,46 +14,45 @@ const {ref , inView} = useInView()
 
 const animation = useAnimation()
 
+
+
+
+
+
 useEffect(()=>{
 if (inView) {
-  animation.start({
-     opacity : 1 ,
-     transition : {
-       duration : 0.5 ,
-       delay : 0.25,
-      }
-  })
+  animation.start('visible')
 
 } else {
-  animation.start({
-   opacity : 0.6 ,
-  })
+  animation.start('hidden')
 }
-
-
 
 },[inView])
 
 
 const HandleToggle = () =>setToggle(!toggle)
   return (
-    <HeroContainer >
-        <Navbar  HandleToggle={HandleToggle} />
+    <HeroContainer ref={ref} >
+        <Navbar  HandleToggle={HandleToggle}/>
         <SideBar toggle={toggle? 1 : 0 } HandleToggle={HandleToggle} />
-        <HeroCol>
+        <HeroCol variants={{
+          hidden : { opacity : 0 , x : -200} ,
+          visible : { opacity : 1 ,x : 0}
+        }}
+        animate={animation}
+        transition={{
+          duration : 0.5 ,
+          straggerChildren : 0.5
+        }}>
             <HeroDecoration>
-                <HeroH1>Greatest Pizza Ever</HeroH1>
+                <HeroH1 >Greatest Pizza Ever</HeroH1>
             </HeroDecoration> 
-            <HeroP ref={ref}>
+            <HeroP>
                 Ready In 60 sec !</HeroP>
-                <motion.div
-                initial="hidden"
-                animate={animation}
-                
-                >
                   <Button>Place Order</Button>
-                </motion.div>
         </HeroCol>
+
+        {/* </motion.div> */}
     </HeroContainer>
   )
 }

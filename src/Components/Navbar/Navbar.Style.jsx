@@ -1,6 +1,7 @@
 import { createGlobalStyle, styled } from 'styled-components'
 import { FaPizzaSlice } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 export const GlobalStyle = createGlobalStyle`
 *{
@@ -15,7 +16,7 @@ html {
 
 `
 
-export const NavBarContainer = styled.div`
+export const NavBarContainer = styled(motion.div)`
 width: 100%;
 height: 80px;
 background:transparent;

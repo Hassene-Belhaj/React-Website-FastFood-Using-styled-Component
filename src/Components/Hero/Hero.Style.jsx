@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { styled } from 'styled-components'
 
 export const HeroContainer = styled.div`
@@ -10,7 +11,7 @@ background-position: center;
 background-size: cover;
 opacity: 1;
 `
-export const HeroCol = styled.div`
+export const HeroCol = styled(motion.div)`
 width: 500px;
 height: 100%;
 display: flex;
