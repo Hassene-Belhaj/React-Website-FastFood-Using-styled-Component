@@ -1,5 +1,4 @@
 import { styled } from 'styled-components'
-import img10 from'/images/featured3.jpg'
 
 export const PizzaOfdaySectionContainer = styled.div`
 width: 100%;
@@ -7,7 +6,7 @@ height: 80vh;
 background:linear-gradient(
 rgba(0,0,0,0.7),
 rgba(0,0,0,0.7)    
-),url(${img10});
+),url('pizza2.jpg');
 background-image:center;
 background-size: cover;
 color: #fff;

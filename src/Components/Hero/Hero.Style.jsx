@@ -1,12 +1,11 @@
 import { styled } from 'styled-components'
-import ImgBG from '../../../public/images/pizza2.jpg'
 
 export const HeroContainer = styled.div`
 height: 100vh;
 background: linear-gradient(
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.8)
-  ), url(${ImgBG});
+  ), url('pizza2.jpg');
 background-position: center;
 background-size: cover;
 opacity: 1;

@@ -1,22 +1,16 @@
-import img1 from  "/images/pizza3.jpg"
-import img2 from  "/images/pizza4.jpg"
-import img3 from  "/images/pizza5.jpg"
-import img4 from  "/images/sweet-1.jpg"
-import img5 from  "/images/sweet-2.jpg"
-import img6 from  "/images/sweet-3.jpg"
 
 
 export const Data =  [
 
     { 
-    image: img1,  
+    image: "pizza3.jpg",  
     title:"Supreme Pizza",
     desc :"Marinara sauce , Basil ,Italian Sausage , Mutti Tomatoes , Olives and Pesto",
     price: '$13.50',
     },
 
     { 
-    image : img2,    
+    image :  "pizza4.jpg",    
     title:"Napolitana Pizza",
     desc :"Marinara sauce , Basil ,Italian Sausage , Mutti Tomatoes , Olives and Pesto",
     price: '$14.99',
@@ -24,7 +18,7 @@ export const Data =  [
     },
      
     { 
-    image : img3,    
+    image :  "pizza5.jpg",    
     title:"Veggie Overload",
     desc :"Marinara sauce , Basil ,Italian Sausage , Mutti Tomatoes , Olives and Pesto",
     price: '$16.99',
@@ -34,7 +28,7 @@ export const Data =  [
 export const DataTwo =  [
 
     { 
-    image: img4,  
+    image:  "sweet-1.jpg",  
     alt: "Ice Cream",
     title:"Caramel Wonder",
     desc:"Vanilla ice cream covered with caramel and chocolate glaze topped with a coco stick",
@@ -42,7 +36,7 @@ export const DataTwo =  [
     },
 
     { 
-    image : img5,    
+    image : "sweet-2.jpg",    
     alt: 'Donuts',
     title:"Doughlicious",
     desc:
@@ -52,7 +46,7 @@ export const DataTwo =  [
     },
      
     { 
-    image : img6,  
+    image :  "sweet-3.jpg",  
     title:"Brownie Bunch",
     desc:
       'Double fudge brownie squares topped with white chocolate pieces and macadamia nuts',
