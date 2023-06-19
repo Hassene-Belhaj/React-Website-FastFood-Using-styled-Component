@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { BsFacebook,BsInstagram,BsYoutube,BsTwitter,BsLinkedin } from 'react-icons/bs'
+import { motion } from "framer-motion";
 
 export const FooterContainer = styled.div`
 width: 100%;
@@ -11,7 +12,7 @@ background: #000;
 height: 50vh;    
 }
 `
-export const FooterContainerDiv = styled.div`
+export const FooterContainerDiv = styled(motion.div)`
 width: 80%;
 height: 100%;
 margin: auto;
@@ -26,7 +27,7 @@ padding-bottom: 1rem;
 }
 `
 
-export const FooterDivOne= styled.div`
+export const FooterDivOne= styled(motion.div)`
 width: 33%;
 @media screen and (max-width : 880px) {
 display    :block ;
@@ -35,7 +36,7 @@ margin: 2rem 0;
 }
 `
 
-export const FooterFlexTwo= styled.div`
+export const FooterFlexTwo= styled(motion.div)`
 width: 40%;
 display: flex;
 font-size: 1.2rem;
@@ -49,7 +50,7 @@ margin: 4rem 0;
 
 }
 `
-export const FooterFlexThree= styled.div`
+export const FooterFlexThree= styled(motion.div)`
 width: 25%;
 display: flex;
 justify-content: space-between;

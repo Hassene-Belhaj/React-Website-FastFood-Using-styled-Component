@@ -28,7 +28,7 @@ text-align: center;
 }
 `
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled(motion.h1)`
 font-size: 5rem;
 color: #fff;
 padding-right: 10px;
@@ -37,17 +37,14 @@ letter-spacing: 3px;
 font-size  :3rem ;
 }
 `
-export const HeroDecoration = styled.div`
-position: relative;
-`
 
-
-export const HeroP = styled.p`
+export const HeroP = styled(motion.p)`
 font-size: 1.8rem;
 color: #fff;
 margin: 1rem 0;
 `
-export const Button = styled.button`
+
+export const Button = styled(motion.button)`
 width: ${({width})=>width};
 background-color: #eab308;
 border: none;
@@ -61,8 +58,10 @@ cursor: pointer;
 transition: all 0.2s ease-in-out;
 &:hover {
     opacity:1;
-
-
 }
+`
+
+export const Span =styled(motion.span)`
+width: auto;
 
 `

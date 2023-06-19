@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 const Navbar = ({HandleToggle}) => {
 
 
+  
   return (
     <NavBarContainer 
     variants={{
